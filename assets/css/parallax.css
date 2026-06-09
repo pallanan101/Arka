@@ -1,0 +1,68 @@
+/* Parallax background sections */
+
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+/* Shared card styling */
+
+.parallax-bg .container, .section-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+  color: #fff;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Typography */
+
+.parallax-bg h2, .parallax-bg p, .parallax-bg li, .section-card h2, .section-card p, .section-card li {
+  color: #fff;
+}
+
+ul.row li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Responsive tweaks */
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax-bg .container, .section-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax-bg h2, .section-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parallax-bg p, .parallax-bg li, .section-card p, .section-card li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .row > [class*="col-"] {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
